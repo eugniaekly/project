@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #FFE6E6;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .navbar {
+    background-color: #FB9AD1;
+    width: 100%;
+    max-width: 2000px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    color: white;
+}
+
+header .navbar .nav-list ul {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem 1rem;
+}
+
+header .navbar .nav-list li {
+    position: relative;
+    list-style-type: none;
+}
+
+header .navbar .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+header .navbar .nav-list li:hover a {
+    background-color: white;
+    color: #FB9AD1; 
+}
+
+#home h1, p{
+    animation: go-up 1s ease-in-out forwards;
+}
+
+@keyframes go-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#gallery img {
+    width: 250px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blog-container {
+    display: flex;
+    gap: 12px;
+    padding: 15px  ;
+}
+
+.blog-item{
+    padding: 12px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
